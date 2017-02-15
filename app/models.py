@@ -3,7 +3,7 @@ from django.db import models
 from temba_client.v2 import TembaClient
 
 
-client = TembaClient('http://localhost:8001', 'b1caed7765ac185c91289c4dea948fd665e82a32')
+client = TembaClient('rapidpro.io', 'your-api-token'')
 groups = client.get_groups().all()
 
 
