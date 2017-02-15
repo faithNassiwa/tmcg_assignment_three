@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rapidpro</title>
+</head>
+<body>
+<br>
+<h2>Number of contacts in a given rapidpro group.</h2>
+<div>
+<table border="1">
+    <tr><td>
+    Group Name </td> <td>Number of contacts</td>
+       </tr>
+{% for group in groups %}
+
+
+        <tr><td>
+    {{group.name}}</td> <td>{{group.count}}</td>
+       </tr>
+
+
+
+{% endfor %}
+</table>
+</div>
+</body>
+</html>
